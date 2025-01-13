@@ -1,14 +1,14 @@
 # Introduction
 
-If you interesting in Business analyst job you might curios what skills to focus to get that job right ? This project explores top-paying business analyst jobs , in-demand skills for business analyst and where high demand meets high salary in business analyst job.
+If you're interested in a Business Analyst role, you might be curious about which skills to focus on to land the job, right? This project explores top-paying Business Analyst positions, the most in-demand skills for the role, and where high demand intersects with high salaries in the Business Analyst field.
 
 SQL queries here : [project_sql folder](/project_sql/)
 
 # Background
 
-The data that use in this project in the data in 2023. It contain about job posting many job in It industry like data analyst,business analyst data engineer , etc...
+The data used in this project is from 2023. It includes job postings across various roles in the IT industry, such as Data Analyst, Business Analyst, Data Engineer, and more.
 
-the data I use in this project i got it from youtube chanel [LukeBarousse](https://www.youtube.com/@LukeBarousse)
+The data was sourced from the YouTube channel [LukeBarousse](https://www.youtube.com/@LukeBarousse)
 
 [raw data ](https://drive.google.com/drive/folders/1moeWYoUtUklJO6NJdWo9OV8zWjRn0rjN)
 
@@ -29,11 +29,11 @@ the data I use in this project i got it from youtube chanel [LukeBarousse](https
 
 # The analysis
 
-Each of query for this project aimed at specific aspect of the business analyst in job market. and here how I query each question
+Each query in this project is designed to address a specific aspect of the Business Analyst job market. Below is an explanation of how I approached each question and constructed the queries.
 
 ### 1. What are the top-paying Business analyst jobs?
 
-To identify the highest paying business analyst jb , I filtered Business analyst job by using average yearly salary and order it descending.
+To identify the highest-paying Business Analyst jobs, I filtered the job postings by their average yearly salaries and sorted them in descending order.
 
 ```sql
 SELECT job_id,
@@ -57,13 +57,13 @@ LIMIT
     100
 ```
 
-![Highest Paying Business Analyest Job in 2023.](assets/hightestPaying2023.png)
+![Highest Paying Business Analyst Job in 2023.](assets/hightestPaying2023.png)
 
 - the highest is 387,460 $ but others in range between 150-200K
 
-![Location of Highest Paying Business Analyest Job in 2023.](assets/locationOfhighPaying.png)
+![Location of Highest Paying Business Analyst Job in 2023.](assets/locationOfhighPaying.png)
 
-- 55.6% of Highest Paying Business Analyest Job is working
+- 55.6% of Highest Paying Business Analyst Job is working
 
 ### 2. What skills are required for the top-paying business analyst jobs?
 
@@ -99,7 +99,7 @@ ORDER BY
     salary_year_avg DESC
 ```
 
-![skills of Highest Paying Business Analyest Jobs in 2023.](assets/skillsForHighstPay.png)
+![skills of Highest Paying Business Analyst Jobs in 2023.](assets/skillsForHighstPay.png)
 
 - skills for highest paying job might not be the high demand skill ?
 
@@ -225,9 +225,8 @@ LIMIT 25
 
 # Conclusion
 
-- Skills that who interesting in Business Analyst should learn are SQL , Excel , Tableau , Python and Power BI because these skill are met high demand and high salary criteria.
+- Skills that individuals interested in a Business Analyst role should focus on include SQL, Excel, Tableau, Python, and Power BI, as these skills meet both high-demand and high-salary criteria.
 
-- If we look at skills that get highest salary you may see that low demand job. So if you make decision base on that criteria may lead you
-  the result that you don't want .
+- However, if you only consider skills associated with the highest salaries, you may notice they are often linked to low-demand jobs. Making decisions based solely on this criterion could lead to unexpected or undesirable outcomes.
 
 - Good Hypothesis → Good Criteria → Good Analysis Results
